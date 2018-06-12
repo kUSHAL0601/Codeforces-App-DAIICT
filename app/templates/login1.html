@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DEMO FOR FREE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../static/css/bootstrap-3.3.7-dist/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="../static/css/w3css.css">
+ <script type="text/javascript" src="../static/js/jquery.js"></script>  
+ <script type="text/javascript" src="../static/js/login1.js"></script>  
+ <script src="../static/css/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  
+  <style>
+  body {
+      position: relative; 
+  }
+  #section1 {padding-top:50px;color: #fff; padding-bottom:10px;background-image: url(../static/img/bridge.jpg);background-repeat: no-repeat;}
+  #section21 {padding-top:50px; padding-bottom:10px;color: #fff; background-image: url(../static/img/search2.jpg);background-repeat: no-repeat;background-size: cover;}
+  #section23 {padding-top:50px; padding-bottom:10px;color: #fff; background-image:url(../static/img/coding2.jpg);background-repeat: no-repeat;background-size: cover;}
+  #section22 {padding-top:50px; padding-bottom:10px;color: #fff; background-image: url(../static/img/competition.jpg);background-repeat: no-repeat;opacity:0.8;background-size: cover;}
+
+  </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="color: white"><strong>St@lk !t</strong></a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section1"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;HOME</a></li>
+          <li><a href="#section21">ABOUT IT</a></li>
+            <button onclick="gen()" type="button" class="btn btn-link" data-toggle="modal" data-target="#signup" style="margin-top:1.8%;font-size: 15px; text-decoration: none;">TRY FOR FREE</button>
+      </div>
+    </div>
+  </div>
+</nav>    
+
+<div id="section1" class="container-fluid">
+<h1>Build a Bridge to Coding Community via <span style="color: black;"><strong>St@lk !t</strong></span></h1>
+  <br>
+ <br>
+ <h1></h1>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+<div id="section21" class="container-fluid">
+<br><br>  <h1 style="font-size: 40px;text-align: center;"><strong>ABOUT IT</strong></h1>
+  <h1>Search your Friends on <span><strong style="color: black;">St@lk !t</strong></span></h1>
+  <br><br><br>
+  <p style="font-size: 22px;color:grey;">Watch the Activities of <span style="color: red;">$Great_Coders</span> at CODEFORCES.</p>
+  <p style="font-size: 22px;color:grey;">See their #list of <span style="color:white">#Code_Submission</span><br><br>View the <span style="color:white;">#Running_Time</span> of the Code and can see the <span style="color:white;">#Status</span> of that Code.</p>
+<br><br><br><br><br><br><br>
+</div>
+<div id="section22" class="container-fluid">
+<br><br><br><br><br>
+  <h1>#Compete with <span style="color:red;"><strong>$Great_Coders</strong></span> and <span style="color: red;"><strong>$Yourself</strong></span></h1>
+  <br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+<div id="section23" class="container-fluid">
+<br><br>
+  <br>
+  <h1>STUCK IN SOME CODE??</h1></h1>
+  <br><br><br><br><br><br><br>
+  <p style="font-size: 22px;color:grey;">You can Even View <span style="color: white;"><strong>#CODE</strong></span> from the Acheivers Account.</p>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <button type="button" data-toggle="modal" data-target="#signup" style="background-color: #555555;color: white;padding: 15px 32px;text-align: center;text-decoration: none;font-size: 20px;margin: 4px 2px;cursor: pointer;margin-left: 45%" align="center" onclick="gen()">Get started</button>
+  <br>
+  <br>
+</div>
+    <div class="modal fade" id="signup" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title">Just Help Us Out </h3>
+        </div>
+        <form>
+        <div class="modal-body">
+         <div class="form-group">
+      <input type="text" class="form-control" id="usr" data-toggle="tooltip" data-placement="right" title="Your Name Please!" placeholder="Name">
+    </div>
+         <div class="form-group">
+      <input type="text" class="form-control" id="email" data-toggle="tooltip" data-placement="right" title="E-mail" placeholder="E-mail"><br>
+    </div>
+    <div class="form-group">
+<h3 style="border:1px black" id="msg"></h3>
+    </div>
+         <div class="form-group">
+      <input type="text" class="form-control" id="chk" data-toggle="tooltip" data-placement="right" title="EnterAbove Text" placeholder="Enter Above Text">
+    </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-info btn-md" data-dismiss="modal" onclick="check()">Try Now...</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  
+</div>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+
+</body>
+</html>

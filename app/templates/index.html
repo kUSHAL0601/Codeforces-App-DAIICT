@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../static/css/w3css.css">
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="../static/css/bootstrap-3.3.7-dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="../static/css/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ -->
+ <script type="text/javascript" src="../static/js/jquery.js"></script>  
+ <script type="text/javascript" src="../static/js/home.js"></script>  
+ <style>
+	  h1{
+		  color: black;
+	  }
+	  
+  body {
+	  background: linear-gradient(55deg,#677278, 	#D3D3D3);
+      position: relative; 
+  }
+	  #section1 {padding-top:50px;padding: 7%; }
+  #section2 {padding-top:50px;padding: 7%; }
+  #section3 {padding-top:50px;padding-bottom: 10%;}
+  #section41 {padding-top:50px;height:500px; }
+  #section42 {padding-top:50px;height:500px;}
+  #section5{padding-top:50px;height:500px;}
+	  hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+	width: 85%;
+}
+a
+{
+  color:#404040;
+} 
+a:hover
+{
+  color:white;
+} 
+	  
+  </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="width: 150px;color: white;">St@lk_It</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+			<li><a href="#section1"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
+			<li><a href="#section2"><span class="glyphicon glyphicon-search"></span>&nbsp;Search</a></li>
+          <li><a href="#section3">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+<div id="section1" class="container-fluid">
+  <h1>&nbsp;&nbsp;Recent Activity...</h1>
+<span align="center" style='font-size:30px'>&nbsp;&nbsp;For Demo Purpose Only Of </span><a style="text-decoration:none;font-size:30px;" href="http://codeforces.com/profile/R.I.P_kUSHAL" target='blank'>User</a> <!-- table for print user data-->
+ <div class="w3-container">
+  
+<br>
+    <table class="table w3-table-all w3-card-4 w3-hoverable" >
+    <tr>
+    	<th>Pr No.</th>
+    	<th colspan="2">Problem Name</th>
+      <th>Date</th>
+    	<th>Time</th>
+      <th>Memory</th>
+    	<th>Lang</th>
+<th>Status</th>
+      <th>Solution</th>
+    </tr>
+    <tbody id='tb' style="color:#404040">
+    </tbody>
+<tr id="btr" style="display: none">
+ <td><button onclick="prev()">Prev</button></td>
+ <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+ <td><button onclick="next()">Next</button></td>
+
+</tr>   
+  </table>
+
+</div>
+</div>
+
+<div id="section2" class="container-fluid"> <!--copy Upperr table-->
+ <h1>&nbsp;&nbsp;Search Coders.....</h1>
+<br>
+
+ <div class="w3-container">
+    <table class="table" >
+    <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+
+    </tr>
+  </table>
+</div>
+  <div class="input-group" style="width: 25%;margin-left: 7%;">
+  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1" id="srch_nm">
+  <span class="input-group-addon" id="basic-addon1" onclick="search()" style="cursor: pointer;">GO</span>
+
+ <!-- <input type="button" value="GO" >	
+  --></div>
+<br><br><br><br><br>	
+  <p style="font-size:35px;"><i>Getting Submissions is Just a Click Away!<br>Enter a Valid codeforces OPEN ID and get their latest submissions</i></p>
+	</div>
+<div id="section3" class="container-fluid">
+	<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact-Us</h1>
+<hr>
+	</div>
+<div id="section3" class="container-fluid">
+	<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact_Us</h1>
+	<hr>
+	<div style="width: 85%;margin-left: 7.5%;">
+	<ul class="w3-ul w3-card-4">
+	
+  <li class="w3-padding-16" >
+   <img src="../static/img/man.png" class="w3-left w3-circle w3-margin-right" style="width:50px">
+    <span class="w3-large">Neel Patel</span><br>
+    <span>Student</span>
+    <span><a href=""><img src="../static/img/gmail.png" style="float: right;margin-right: 1%;"></a>
+    <a href="https://www.facebook.com/programmer.neel1628"><img src="../static/img/facebook.png" style="float: right;margin-right: 0.1%;"></a>
+    </span>
+	  
+  </li>
+  <li class="w3-padding-16">
+    <img src="../static/img/man.png" class="w3-left w3-circle w3-margin-right" style="width:50px">
+    <span class="w3-large">Harnish Rajput</span><br>
+    <span>Student</span>
+     <span><a href=""><img src="../static/img/gmail.png" style="float: right;margin-right: 1%;"></a>
+    <a href="https://www.facebook.com/profile.php?id=100012557927219"><img src="../static/img/facebook.png" style="float: right;margin-right: 0.1%;"></a>
+    </span>
+  </li>  
+  <li class="w3-padding-16">
+   	<img src="../static/img/man.png" class="w3-left w3-circle w3-margin-right" style="width:50px">
+    <span class="w3-large">Kushal Majmundar</span><br>
+    <span>Mentor</span>
+     <span><a href=""><img src="../static/img/gmail.png" style="float: right;margin-right: 1%;"></a>
+    <a href="https://www.facebook.com/kushal.majmundar.3"><img src="../static/img/facebook.png" style="float: right;margin-right: 0.1%;"></a>
+    </span>
+  </li> 
+   <li class="w3-padding-16">
+   	<img src="../static/img/man.png" class="w3-left w3-circle w3-margin-right" style="width:50px">
+    <span class="w3-large">Jenish Patel</span><br>
+    <span>Student</span>
+     <span><a href=""><img src="../static/img/gmail.png" style="float: right;margin-right: 1%;"></a>
+    <a href="https://www.facebook.com/profile.php?id=100008362837734&sk=photos&collection_token=100008362837734%3A2305272732%3A5"><img src="../static/img/facebook.png" style="float: right;margin-right: 0.1%;"></a>
+    </span>
+  </li> 
+</ul>
+    
+     </div>
+     </div>
+</body>
+</html>
